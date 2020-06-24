@@ -181,7 +181,7 @@ This is the root of the application that we can display on the projector screen 
 
 #### [](#table-component)TABLE COMPONENT
 
-[![](https://camo.githubusercontent.com/339ea07b094cf59a30dfb73a2a38afcdf18eac45/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f7461626c6563666c342e706e67)](https://camo.githubusercontent.com/339ea07b094cf59a30dfb73a2a38afcdf18eac45/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f7461626c6563666c342e706e67)
+<p><img src="https://camo.githubusercontent.com/339ea07b094cf59a30dfb73a2a38afcdf18eac45/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f7461626c6563666c342e706e67"></img></p>
 
 The table component contains an ordered list of teams in each group. Two-stage sorting was used here: by number of points and game balance. The table is updated after each match. The group view changes depending on the match being played. Two places that giving promotion to semifinals are marked in blue.
 
