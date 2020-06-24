@@ -186,50 +186,48 @@ This is the root of the application that we can display on the projector screen 
 The table component contains an ordered list of teams in each group. Two-stage sorting was used here: by number of points and game balance. The table is updated after each match. The group view changes depending on the match being played. Two places that giving promotion to semifinals are marked in blue.
 
 #### [](#timer-component)TIMER COMPONENT
-
-[![](https://camo.githubusercontent.com/344934217d2afe788944285ada1067eb400ca3f3/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f54696d6572436f6e7461696e65722043464c344150502e706e67)](https://camo.githubusercontent.com/344934217d2afe788944285ada1067eb400ca3f3/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f54696d6572436f6e7461696e65722043464c344150502e706e67)
+<p align="center"><img src="https://camo.githubusercontent.com/344934217d2afe788944285ada1067eb400ca3f3/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f54696d6572436f6e7461696e65722043464c344150502e706e67)](https://camo.githubusercontent.com/344934217d2afe788944285ada1067eb400ca3f3/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f54696d6572436f6e7461696e65722043464c344150502e706e67)
 
 The clock component displays the current play time. We can choose from three duel lengths: 3 min, 2.5 min and 2 min. Ten seconds before the end of the match, the end-of-match jingle starts playing.
 
 #### [](#schedule-component)SCHEDULE COMPONENT
 
-[![](https://camo.githubusercontent.com/e05d041f41051b657bba65d4149959a9398925f2/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f5363686564756c65436f6e7461696e65722043464c344150502e706e67)](https://camo.githubusercontent.com/e05d041f41051b657bba65d4149959a9398925f2/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f5363686564756c65436f6e7461696e65722043464c344150502e706e67)<a target="_blank" rel="noopener noreferrer" href=""></a>
-
+<p align="center"><img src="https://camo.githubusercontent.com/e05d041f41051b657bba65d4149959a9398925f2/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f5363686564756c65436f6e7461696e65722043464c344150502e706e67"></img></p>
 The schedule component displays a summary of all matches along with the start time and results of completed matches. The current match is also indicated by the LIVE sign.
 
 #### [](#team-component)TEAM COMPONENT
 
-[![](https://camo.githubusercontent.com/b75e1bb49dc12ee2a706916e1aaef76b5f30b092/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f5465616d436f6e7461696e65722043464c344150502e706e67)](https://camo.githubusercontent.com/b75e1bb49dc12ee2a706916e1aaef76b5f30b092/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f5465616d436f6e7461696e65722043464c344150502e706e67)
+<p align="center"><img src="https://camo.githubusercontent.com/b75e1bb49dc12ee2a706916e1aaef76b5f30b092/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f5465616d436f6e7461696e65722043464c344150502e706e67"></img></p>
 
 The two team components display informations about currently competing teams along with their crest.
 
 #### [](#draw-component)DRAW COMPONENT
 
-[![](https://camo.githubusercontent.com/c07f2252a72c004a943a8afd4f1cad231ad6e6b4/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f64726177737461747363666c342e706e67)](https://camo.githubusercontent.com/c07f2252a72c004a943a8afd4f1cad231ad6e6b4/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f64726177737461747363666c342e706e67)
+<p align="center"><img src="https://camo.githubusercontent.com/c07f2252a72c004a943a8afd4f1cad231ad6e6b4/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f64726177737461747363666c342e706e67"></img></p>
 
 The draw component is located in the central part of the application. It is used to draw the game in which teams will compete. Under the title display section there are controls. The random component can be operated by the mini keyboard with the ENTER (draw) and SPACE (reset) keys. Until the user undertakes the operation of changing the result, the possibility of the draw is blocked (signaled by the color change of the button). After pressing the DRAW button, the title screen is displayed along with the soundtrack of the drawn game. Then players are informed about the mode in which the teams will play. Information about the games drawn is stored in the History Container.
 
 #### [](#score-component)SCORE COMPONENT
 
-[![](https://camo.githubusercontent.com/9943b4b2b3a88f8b6db2fe875f5719390ffe462e/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f53636f7265436f6e7461696e65722043464c344150502e706e67)](https://camo.githubusercontent.com/9943b4b2b3a88f8b6db2fe875f5719390ffe462e/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f53636f7265436f6e7461696e65722043464c344150502e706e67)
+<p align="center"><img src="https://camo.githubusercontent.com/9943b4b2b3a88f8b6db2fe875f5719390ffe462e/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f53636f7265436f6e7461696e65722043464c344150502e706e67"></img></p>
 
 The two Score Components are located under Team Components. They are used to control the current result. In the event of a result correction, select Score Confirmation from the menu. There you can lower the value of the team's score. After one of the teams scores 3, confirm the result in the pop-up window in the lower left corner.
 
 #### [](#stats-component)STATS COMPONENT
 
-[![](https://camo.githubusercontent.com/0b15a64881b81939887fb4b87342948d29a408ac/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f5374617473436f6e7461696e657263666c346170702e706e67)](https://camo.githubusercontent.com/0b15a64881b81939887fb4b87342948d29a408ac/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f5374617473436f6e7461696e657263666c346170702e706e67)
+<p align="center"><img src="https://camo.githubusercontent.com/0b15a64881b81939887fb4b87342948d29a408ac/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f5374617473436f6e7461696e657263666c346170702e706e6"></img></p>
 
 The statistics component for each team appears at specific intervals after starting the timer. The type of statistics is displayed randomly, and the statistics themselves are updated after each completed match.
 
 #### [](#infobar-component)INFOBAR COMPONENT
 
-[![](https://camo.githubusercontent.com/b6ac1d0d20dca4b6879c72af7c2504d1b3d138e8/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f496e666f426172436f6e7461696e65722043464c344150502e706e67)](https://camo.githubusercontent.com/b6ac1d0d20dca4b6879c72af7c2504d1b3d138e8/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f496e666f426172436f6e7461696e65722043464c344150502e706e67)
+<p align="center"><img src="https://camo.githubusercontent.com/b6ac1d0d20dca4b6879c72af7c2504d1b3d138e8/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f496e666f426172436f6e7461696e65722043464c344150502e706e67"></img></p>
 
 The InfoBar component is located at the bottom of the application and is used to display messages. The bar automatically displays information related to the draw of games. Users can enter their own text using the Message Center module in the application menu.
 
 #### [](#menu)MENU
 
-[![](https://camo.githubusercontent.com/808b8ef34a8c348dd781558999958e6be14b3b0d/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f4d656e75436f6e7461696e657243666c346170702e706e67)](https://camo.githubusercontent.com/808b8ef34a8c348dd781558999958e6be14b3b0d/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f4d656e75436f6e7461696e657243666c346170702e706e67)
+<p align="center"><img src="https://camo.githubusercontent.com/808b8ef34a8c348dd781558999958e6be14b3b0d/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f4d656e75436f6e7461696e657243666c346170702e706e67"></img></p>
 
 ##### [](#score-confirmation)`SCORE CONFIRMATION`
 
@@ -271,13 +269,13 @@ The InfoBar component is located at the bottom of the application and is used to
 
 #### [](#2-match-history)2\. MATCH HISTORY
 
-[![](https://camo.githubusercontent.com/ca8bb399deccc7529f4fbcef14865914a343dd3c/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f486973746f7279436f6e7461696e657243464c344150502e706e67)](https://camo.githubusercontent.com/ca8bb399deccc7529f4fbcef14865914a343dd3c/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f486973746f7279436f6e7461696e657243464c344150502e706e67)
+<p align="center"><img src="https://camo.githubusercontent.com/ca8bb399deccc7529f4fbcef14865914a343dd3c/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f486973746f7279436f6e7461696e657243464c344150502e706e67"></img></p>
 
 The component displays the schedule with the games drawn for each match. Red and green indicate whether the game has been won or lost by the selected team.
 
 #### [](#3-stats-centre)3\. STATS CENTRE
 
-[![](https://camo.githubusercontent.com/7e50c994dfbc48e0945c8b84f1dadaf7ac670c52/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f537461747343656e747265436f6e7461696e65722e706e67)](https://camo.githubusercontent.com/7e50c994dfbc48e0945c8b84f1dadaf7ac670c52/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f537461747343656e747265436f6e7461696e65722e706e67)
+<p align="center"><img src="https://camo.githubusercontent.com/7e50c994dfbc48e0945c8b84f1dadaf7ac670c52/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f537461747343656e747265436f6e7461696e65722e706e67"></img></p>
 
 The component displays statistics for the selected team. The user can choose the type of graph displayed and choose the appropriate parameters.
 
