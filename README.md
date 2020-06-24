@@ -215,7 +215,7 @@ The two Score Components are located under Team Components. They are used to con
 
 #### [](#stats-component)STATS COMPONENT
 
-<p align="center"><img src="https://camo.githubusercontent.com/0b15a64881b81939887fb4b87342948d29a408ac/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f5374617473436f6e7461696e657263666c346170702e706e6"></img></p>
+<p align="center"><img src="https://camo.githubusercontent.com/0b15a64881b81939887fb4b87342948d29a408ac/687474703a2f2f7777772e636f6e74726162616e64612e65752f75706c6f61642f686f7374696e672f5374617473436f6e7461696e657263666c346170702e706e67"></img></p>
 
 The statistics component for each team appears at specific intervals after starting the timer. The type of statistics is displayed randomly, and the statistics themselves are updated after each completed match.
 
