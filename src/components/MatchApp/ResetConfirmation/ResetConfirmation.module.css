@@ -1,0 +1,47 @@
+.ResetConfirmation{
+grid-area:setup;
+padding: 2px 4px;
+color: var(--primary);
+font-size: 12px;
+font-weight: 600;
+}
+
+.AlertText{
+margin: 4px auto 4px;
+padding: 4px 8px;
+text-align: center;
+}
+
+span{
+    color: var(--ternary)
+}
+
+.ResetButtons{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.ResetButtons button {
+    display:inline-block;
+    height: 20px;
+    width: 60px;
+    margin-left:5px;
+    padding: 3px 10px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: black;
+    outline:none;
+    cursor: pointer;
+}
+
+.ResetButtons button:nth-child(1){
+    border: 1px solid var(--ternary);
+}
+
+
+
+button:hover{
+    background-color:  var(--secondary);
+}
+
+

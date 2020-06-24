@@ -1,0 +1,69 @@
+table {
+	grid-area: table;
+	box-sizing: border-box;
+	height: 150px;
+	margin-top: 2px;
+	margin-left: 14px;
+	border: 2px solid var(--primary);
+	border-radius: 10px;
+	animation: flip-scale-up-hor 0.5s ease-in both;
+}
+
+.Tab {
+	height: 200px;
+}
+
+td {
+	width: 20px;
+	border: 2px solid black;
+	border-radius: 5px;
+	text-align: center;
+}
+
+tr:nth-child(2),
+tr:nth-child(3) {
+	animation: promotion 1.5s ease-in-out forwards;
+}
+
+
+
+@keyframes blink {
+	50% {
+		border-left: 8px solid yellowgreen;
+	}
+}
+@keyframes promotion {
+	0% {
+		background-color: rgba(6, 174, 213, 0.5);
+	}
+	50% {
+		background-color: rgba(6, 174, 213, 0.8);
+	}
+	100% {
+		background-color: rgba(6, 174, 213);
+	}
+}
+
+@keyframes flip-scale-up-hor {
+	0% {
+		-webkit-transform: scale(0.5) rotateX(0);
+		transform: scale(0.5) rotateX(0);
+		opacity: 1;
+	}
+	25% {
+		opacity: 0.7;
+	}
+	50% {
+		-webkit-transform: scale(1) rotateX(-45deg);
+		transform: scale(1) rotateX(-45deg);
+		opacity: 0;
+	}
+	75% {
+		opacity: 0.7;
+	}
+	100% {
+		-webkit-transform: scale(1) rotateX(-360deg);
+		transform: scale(1) rotateX(-360deg);
+		opacity: 1;
+	}
+}

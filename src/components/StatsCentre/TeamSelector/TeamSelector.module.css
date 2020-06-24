@@ -1,0 +1,32 @@
+.TeamSelector{
+  box-sizing: border-box;
+  display:flex;
+  justify-content: center;
+  width:100%;
+  border: 3px solid var(--primary);
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.TeamTile{
+  width: 100px;
+  height:100px;
+  filter:grayscale(0.8);
+}
+
+.Active{
+  width:100px;
+  height:100px;
+  filter:none;
+ }
+
+.TeamTile:hover{
+border-bottom: 1px solid var(--primary);
+cursor: pointer;
+filter:none
+}
+
+.TeamTile img{
+ height:100%;
+ padding: 5px;
+}

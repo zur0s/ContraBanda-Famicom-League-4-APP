@@ -1,0 +1,154 @@
+.Team1, .Team2{
+position: relative;
+width: 400px;
+margin-top: 15px;
+padding-top: 3px;
+border: 2px solid var(--primary);
+border-radius: 10px;
+color: black;
+background-color: var(--primary);
+text-align: center;
+font-size: 14px;
+    }
+
+:fullscreen .Team1, :fullscreen .Team2{
+    width:430px;
+    margin-top:20px;
+    font-size: 16px;
+ }
+
+.Team1{
+    grid-area: team1;
+    align-self: start;
+    justify-self: center;
+   }
+
+.Team2{
+    grid-area: team2;
+   align-self: start;
+    justify-self: center;
+  }
+
+.ShowTeam{
+    display:grid;
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 80px 1fr;
+    grid-template-areas:
+    "logo name"
+    "info info";
+    width:100%;
+    background-color:var(--primary);
+    border-radius: 10px;
+}
+
+.Logo{
+    grid-area:logo;
+    position: relative;
+    width: 100px;
+    height:100%;
+    padding: 10px;
+    background-color: black;
+    border-top-left-radius: 10px;
+    /* animation: showlogo ease  2s 11s forwards; */
+}
+
+.Logo img {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 80px;
+    height:auto;
+    padding: 5px;
+   }
+
+.TeamName{
+   grid-area: name;
+   display:block;
+   width:100%;
+   height:auto;
+   margin: 0 auto;
+   border-top-right-radius: 10px;
+   color: var(--primary);
+   background-color:black;
+   font-size: 24px;
+   line-height: 80px;
+   font-weight: bold;
+   text-transform: uppercase;
+  }
+
+  :fullscreen .TeamName{
+      font-size: 26px;
+  }
+
+.TeamInfo{
+    grid-area:info;
+    width:100%;
+    margin: 10px auto 3px;
+    text-align: center;
+    list-style: none;
+    border-radius: 10px;
+  }
+
+.Team1 li, .Team2 li{
+    margin: 2px auto;
+    color:var(--primary);
+    background-color: black;
+    letter-spacing: 2px;
+}
+
+li p {
+    display: inline-block;
+}
+
+.Team1 li:nth-child(1), .Team2 li:nth-child(1){
+    animation: showTeam linear 1s 1.5s both;
+   }
+.Team1 li:nth-child(2), .Team2 li:nth-child(2){
+    animation: showTeam linear 1s 2s both;
+   }
+.Team1 li:nth-child(3), .Team2 li:nth-child(3){
+  font-size: 16px;
+  letter-spacing: 4px;
+animation: showTeam linear 1s 3s both;
+   }
+
+ .Team1 li:nth-child(4), .Team2 li:nth-child(4){
+ animation: showTeam linear 1s 4s both;
+}
+.Team1 li:nth-child(5), .Team2 li:nth-child(5){
+ animation: showTeam linear 1s 4.3s both;
+}
+.Team1 li:nth-child(6), .Team2 li:nth-child(6){
+ animation: showTeam linear 1s 4.6s both;
+}
+
+.Team1 span, .Team2 span{
+    color: white;
+    }
+
+@keyframes showlogo{
+    0%{
+    left:23%;
+    z-index: 2;
+    opacity:0;
+    transform: scale(0.5, 0.5);
+    }
+    100% {
+    left:25%;
+    opacity:1;
+    z-index: 2;
+    transform: scale(1, 1);
+    }
+}
+
+@keyframes showTeam{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100% {
+        opacity:1;
+    }
+}

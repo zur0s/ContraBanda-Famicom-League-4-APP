@@ -1,0 +1,66 @@
+ .Score1{
+    grid-area:score1;
+ }
+
+ .Score2{
+    grid-area:score2;
+ }
+
+ .Score1, .Score2{
+    position: relative;
+    margin-top:4px;
+    margin-bottom: 6px;
+    background-color: rgba(0,0,0,0)
+ }
+
+:fullscreen .Score1, :fullscreen .Score2{
+    margin-top:10px;
+    margin-bottom: 30px
+}
+
+ h2{
+    width: 100px;
+    margin: 2px auto 0;
+    color: var(--primary);
+    background-color: rgba(0,0,0,0);
+    font-size: 82px;
+    font-weight: 800;
+    text-align: center;
+   }
+
+:fullscreen h2 {
+    font-size: 120px;
+}
+
+.Score1 button, .Score2 button{
+    display:block;
+    height: 48px;
+    padding: 10px 25px;
+    margin: 2px auto;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    color:var(--primary);
+    background-color:#0A0908;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+  }
+
+:fullscreen .Score1 button, :fullscreen .Score2 button{
+    height: 64px;
+    padding: 20px 40px;
+    margin: 2px auto;
+    font-size: 20px;
+   }
+
+.Score1 button:hover, .Score2 button:hover{
+    background-color:var(--secondary);
+    font-weight: 600;
+}
+
+.Score1.Apply, .Score2.Apply{
+    color: var(--primary);
+	background-color: var(--secondary);
+    border: 2px solid #29bf12
+}

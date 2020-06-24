@@ -1,0 +1,47 @@
+.MessageForm {
+    margin: 20px 10px;
+    }
+
+ .MessageInput  {
+    height: 24px;
+    width:240px;
+    padding: 1px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: black;
+    outline:none;
+}
+
+ .MessageInput:active {
+    height: 24px;
+    color: var(--primary);
+    background-color: black;
+    outline:none;
+}
+
+.MessageInput::placeholder{
+    padding: 1px;
+    color:var(--primary);
+    background-color: black;
+}
+
+ .MessageButton {
+    height: 24px;
+    padding: 1px 2px;
+    margin-left: 10px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: black;
+    outline:none;
+    cursor: pointer;
+}
+
+.MessageButton:hover{
+    background-color:  var(--secondary);
+}
+
+/* .MessageLabel{
+    grid-area: setup;
+    font-size: 12px;
+    padding-right: 20px;
+} */

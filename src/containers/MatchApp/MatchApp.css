@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+:root{
+ --primary:#67e8fe;
+ --secondary: #320085;
+ --ternary: #e60062;
+ --jingle: #e60062
+}
+
+.recharts-symbols{
+  fill: var(--ternary)
+  }
+
+.App{
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 33% 1fr 33%;
+  grid-template-rows: 150px 100px 120px 1fr 1fr 30px;
+  grid-template-areas:
+  "table timer schedule"
+  "team1 draw team2 "
+  "team1 draw team2"
+  "score1 draw score2"
+  "stats1 draw stats2"
+  "navbar navbar navbar";
+  height: 100vh;
+  min-width: 768px;
+  background-color: #000;
+  overflow: hidden;
+
+  }
+
+:fullscreen .App{
+  display: grid;
+  grid-template-columns: 32vw 1fr 1fr 32vw;
+  grid-template-rows: 150px 100px 120px 1fr 1fr 30px;
+  grid-template-areas:
+  "table timer timer schedule"
+  "team1 draw draw team2 "
+  "team1 draw draw team2"
+  "score1 draw draw score2"
+  "stats1 draw draw stats2"
+  "navbar navbar navbar navbar";
+  height: 100vh;
+  background-color: black;
+    }
+

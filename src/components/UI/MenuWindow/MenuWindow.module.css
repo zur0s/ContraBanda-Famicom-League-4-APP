@@ -1,0 +1,48 @@
+.MenuWindow{
+  position: absolute;
+  left:0;
+  bottom:0;
+  display: grid;
+  grid-template-columns: 1fr 20px;
+  grid-template-rows:  20px 1fr;
+  grid-template-areas: "bar exit"
+  "setup setup";
+  width:360px;
+  border: solid 2px var(--primary);
+  background-color: black;
+  z-index:3;
+
+}
+
+.Exit {
+  grid-area: exit;
+  /* border-radius: 50%; */
+  height: 20px;
+  border: 1px solid black;
+  width:20px;
+  color: black;
+  background-color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align:center;
+  cursor:pointer;
+}
+
+.Exit:hover{
+  background-color: var(--secondary);
+}
+
+.MenuBar{
+  grid-area: bar;
+  border: 1px solid  black;
+  background-color:var(--primary);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align:center;
+  cursor:move;
+}
+.MenuBar i{
+  font-size: 12px;
+}

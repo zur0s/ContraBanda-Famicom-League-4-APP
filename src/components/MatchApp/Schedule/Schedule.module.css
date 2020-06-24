@@ -1,0 +1,120 @@
+.Schedule{
+  grid-area: schedule;
+  align-self: start;
+  justify-self: center;
+  box-sizing: border-box;
+  width:440px;
+  /* max-width:620px; */
+  min-width: 400px;
+  height: 150px;
+  max-height: 360px;
+  position: relative;
+  margin:2px;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  overflow-y: hidden;
+  }
+
+  .Active{
+font-weight: 600
+  }
+
+.Schedule div{
+  position: relative;
+  left:0;
+  top:0;
+  border-top: 1px solid #332f35;
+  animation: slide linear infinite 10s alternate;
+}
+.Schedule div:first-child{
+    border-top:none;
+}
+.Schedule span{
+      padding:0 10px;
+      margin-left: 20px;
+      color: #9A031E;
+     background-color: #FCDC4D;
+      border: 1px solid var(--ternary);
+      font-weight: bold;
+      animation: live 3s infinite ease-in both;
+  }
+
+
+  .Loader,
+  .Loader:after {
+    display:inline-block;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin-left:20px;
+  }
+  .Loader {
+
+    position: relative;
+    border-top: 2.5px solid rgba(41, 191, 18, 0.5);
+    border-right: 2.5px solid rgba(41, 191, 18, 0.5);
+    border-bottom: 2.5px solid rgba(41, 191, 18, 0.5);
+    border-left: 2.5px solid var(--primary);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load8 .5s infinite linear;
+    animation: load8 .5s infinite linear;
+  }
+  @-webkit-keyframes load8 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes load8 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+
+  @keyframes slide {
+    0% {
+
+  transform: translate(0,0)
+    }
+   20%{
+    transform: translate(0,0)
+   }
+   80%{
+    transform: translate(0,-55%)
+   }
+    100% {
+    transform: translate(0,-55%)
+    }
+  }
+
+  @keyframes live{
+ 20%{
+     opacity:1
+    }
+
+40%{
+    opacity:0
+}
+
+60%{
+    opacity:1
+}
+80%{
+    opacity:0
+}
+100%{
+    opacity:1
+}
+  }

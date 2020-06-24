@@ -1,0 +1,38 @@
+.ScoreConfirmation{
+grid-area:setup;
+display:flex;
+justify-content: space-between;
+margin: 5px auto 0;
+color: var(--primary);
+font-size: 12px;
+font-weight: 600;
+width:100%;
+
+}
+
+.ScoreBoard{
+    width:90%;
+    display:flex;
+    justify-content: center;
+  }
+
+.fa-minus-circle:hover{
+cursor: pointer;
+}
+
+.ScoreConfirmation button {
+
+    height: 24px;
+    margin-left:10px;
+    margin-bottom: 5px;
+    padding: 1px 2px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: black;
+    outline:none;
+    cursor: pointer;
+}
+
+.ScoreConfirmation button:hover{
+    background-color:  var(--secondary);
+}

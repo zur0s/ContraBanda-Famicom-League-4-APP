@@ -1,0 +1,120 @@
+.Timer{
+    position: relative;
+    grid-area: timer;
+    align-self: start;
+    justify-self: center;
+    box-sizing: border-box;
+    width:95%;
+    height: 95%;
+    margin: 2px 4px;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    background-color: black;
+    text-align: center;
+}
+
+:fullscreen .Timer{
+    height:100%;
+}
+
+.Counter{
+    border-radius: 10px;
+    color: var(--primary);
+    background-color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+:fullscreen .Counter{
+    font-size: 56px;
+}
+
+.RadioGroup {
+    display: inline-block;
+    margin: 3px;
+    border: solid 2px #332f35;
+    border-radius: 20px;
+    font-size: 10px;
+    overflow: hidden;
+  }
+
+  :fullscreen .RadioGroup{
+      margin:2px;
+  }
+
+input[type=radio] {
+    display: none;
+    position: absolute;
+    visibility: hidden;
+  }
+
+  label {
+    display: inline-block;
+    padding: 5px 20px;
+    color:var(--primary);
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  input[type=radio]:checked + label{
+    color: var(--primary);
+    background-color: #332f35;
+  }
+
+  label + input[type=radio] + label {
+    border-left: solid 2px #332f35;
+  }
+
+.Timer button{
+    position: absolute;
+    left: 50%;
+    bottom:-3px;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    color: var(--primary);
+    background-color:black;
+    border: 2px solid var(--primary);
+    border-radius:20px;
+    font-size: 18px;
+    z-index: 2;
+    outline:none;
+    }
+.Timer button:hover{
+    background-color:  var(--secondary);
+}
+
+:fullscreen .Timer button {
+    bottom:-2px;
+}
+
+.InfoTimer{
+position: absolute;
+bottom:0;
+left:0;
+width:100%;
+height: 10px;
+color: var(--primary);
+background-color: var(--primary);
+border: 2px solid black;
+font-size: 20px;
+animation: infoTimer 60s linear both;
+}
+
+@keyframes infoTimer{
+0%{
+    width:100%;
+}
+49%{
+    background-color:var(--primary);
+}
+50%{
+    background-color:var(--primary);
+}
+83.3%{
+    background-color: red;
+}
+100%{
+    background-color: red;
+    width:0
+}
+}

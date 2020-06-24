@@ -1,0 +1,159 @@
+.Draw {
+	grid-area: draw;
+  align-self: center;
+  justify-self: center;
+	box-sizing: border-box;
+	position: relative;
+	width: 100;
+	height: 100%;
+	margin-top: 30px;
+	outline: none;
+}
+
+.DrawGame {
+	position: relative;
+	width: 400px;
+	height: 350px;
+	margin: 0 auto;
+	border: 2px solid var(--primary);
+	border-radius: 10px;
+	background-color: black;
+	background-image: url("/static/logo/cfl_logo.png");
+	background-size: cover;
+	overflow: hidden;
+}
+
+:fullscreen .DrawGame {
+	width:480px;
+	height:430px;
+	background-color: black;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+:fullscreen .DrawGame img{
+width:102%
+}
+
+.GameCounter {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 95%;
+	padding: 10px 5px;
+	margin-top: 18px;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: var(--primary);
+	border-radius: 10px;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	animation: counter 2.5s 0.5s ease-in both;
+}
+
+h1 {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+	color:var(--primary);
+	/* border-top: 4px solid var(--primary);
+	border-bottom: 2px solid var(--primary); */
+	padding: 20px 10px;
+	font-size: 50px;
+	text-align: center;
+	opacity: 0.2;
+	background-color: #0a0908;
+	/* background: linear-gradient(to right, var(--secondary),var(--ternary)); */
+	z-index: 1;
+	animation: gameMode 10s 2s cubic-bezier(0, 1.15, 0.31, 1) both;
+	/* animation: gameMode 6s 1.5s cubic-bezier(0,1.15,.42,1.01) both; */
+}
+
+:fullscreen h1{
+	font-size: 70px;
+}
+
+.DrawPanel {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.DrawPanel button {
+	height:40px;
+	margin: 10px;
+	padding: 1em 2em;
+	color:var(--primary);
+	background-color: black;
+	border: 2px solid var(--primary);
+	border-radius: 10px;
+	font-size: 12px;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+	transition: 0.5s;
+}
+
+.DrawPanel button:disabled{
+	border: 2px solid var(--ternary);
+}
+
+:fullscreen .DrawPanel button{
+	height:52px;
+	padding: 10px 25px;
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+.DrawPanel button:hover {
+	background-color: var(--secondary);
+	color: var(--primary);
+	border: 2px solid var(--primary);
+}
+
+@keyframes counter {
+	0% {
+		opacity: 0;
+	}
+	9.99% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+		line-height: 28px;
+	}
+
+	99% {
+		opacity: 1;
+		line-height: 28px;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes gameMode {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+			}
+	10.01% {
+		transform: scale(0.5);
+		opacity: 1;
+	}
+	99.9% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,73 @@
+.TeamReview{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  width:100%;
+  margin:10px 0 15px 0;
+  padding: 20px;
+  border: 3px solid var(--primary);
+  border-radius: 2px;
+}
+
+.TeamMiniature{
+  width:200px;
+  height: 200px;
+}
+
+.TeamInfo{
+  min-width:25%;
+  text-align: center;
+  list-style: none;
+  list-style-position:inside;
+}
+
+.TeamInfo li{
+  display:flex;
+  justify-content: center;
+  background-color: var(--ternary);
+  color: white;
+  border-bottom: 1px solid var(--secondary)
+}
+
+.TeamInfo li:nth-child(1){
+  background-color: var(--secondary);
+}
+
+.TeamLineup{
+  min-width:25%;
+  text-align: center;
+  list-style: none;
+}
+
+.TeamLineup li{
+  display:flex;
+  justify-content: center;
+  height: 22px;
+  background-color: var(--ternary);
+  border-bottom: 1px solid var(--secondary);
+  color: white
+}
+
+.TeamLineup li:nth-child(1){
+  background-color: var(--secondary);
+}
+
+.TeamStats{
+  min-width:20%;
+  list-style: none;
+  margin:1px;
+}
+
+.TeamStats li{
+  box-sizing: border-box;
+  height: 24px;
+  padding:1px;
+  background-color: var(--ternary);
+  color: white;
+  border-bottom: 1px solid var(--secondary)
+}
+
+.TeamStats li:nth-child(1){
+  background-color: var(--secondary);
+  text-align:center
+}

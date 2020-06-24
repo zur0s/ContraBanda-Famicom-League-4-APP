@@ -1,0 +1,102 @@
+.Stats {
+  display: block;
+  font-weight: 400;
+  text-align: center;
+}
+
+.Stats1{
+grid-area: stats1;
+}
+
+.Stats2{
+  grid-area: stats2;
+}
+
+.Stats1, .Stats2{
+    font-size: 16px;
+    position: relative;
+    justify-self:center;
+    width: 380px;
+    height: 40px;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    color: white;
+    background: linear-gradient(to right,var(--primary), var(--secondary),var(--ternary));
+    box-shadow:
+      0 0 0 2px var(--ternary)
+    8px 0 0 2px #f714d8,
+    1px 1px 3px 4px var(--primary),
+    2px 1px 1px 1px rgba(37, 180, 199, 0.603) inset;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    overflow:hidden;
+    animation: show 15s forwards;
+   }
+
+   :fullscreen .Stats1, :fullscreen .Stats2{
+     height:82px;
+     font-size: 18px;
+     line-height: 46px;
+     animation: showFull 15s forwards;
+     }
+
+  header{
+      font-size: 16px;
+      display: block;
+      color: var(--primary);
+      background-color: black;
+      border: 2px solid var(--primary);
+      box-shadow:
+      1px 1px 3px 2px var(--primary)
+      1px 1px 3px 2px var(--ternary);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 30px;
+  }
+
+  :fullscreen header {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+      }
+
+
+  @keyframes show {
+    0% {
+      opacity: 0;
+      height: 0;
+    }
+    15% {
+      opacity: 1;
+      height: 62px;
+    }
+     85% {
+      opacity: 1;
+      height: 62px;
+    }
+     100% {
+       opacity: 0;
+     height: 0px;
+    }
+  }
+
+
+  @keyframes showFull {
+    0% {
+      opacity: 0;
+      height: 0;
+    }
+    15% {
+      opacity: 1;
+      height: 80px;
+    }
+     85% {
+      opacity: 1;
+      height: 80px;
+    }
+     100% {
+       opacity: 0;
+     height: 0px;
+    }
+  }
